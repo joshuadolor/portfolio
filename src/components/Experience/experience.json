@@ -1,0 +1,165 @@
+[
+  {
+    "from": "June 2022",
+    "to": "Present",
+    "role": "Frontend Developer",
+    "company": "Userway",
+    "summary": "Conduct WCAG compliance audits, implement accessibility solutions, and stay updated on standards. Communicate effectively, manage multiple projects, and consistently deliver high-quality results in a fast-paced environment.",
+    "skills": [
+      "HTML",
+      "CSS",
+      "SASS",
+      "Javascript",
+      "Typescript",
+      "React",
+      "Angular",
+      "Git"
+    ],
+    "link": "https://userway.org/"
+  },
+  {
+    "from": "July 2020",
+    "to": "October 2023",
+    "role": "Senior Full Stack Developer",
+    "company": "Vanguard Wireless",
+    "summary": "Developed and managed a customer portal, collaborating with cross-functional teams to gather requirements, define features, and ensure high usability and reliability. ",
+    "skills": [
+      "HTML",
+      "Javascript",
+      "VueJS",
+      "MySQL",
+      "Laravel 5.5",
+      "SASS",
+      "PHP",
+      "unix",
+      "Adobe XD",
+      "Postman",
+      "Twilio"
+    ],
+    "link": "https://www.vanguardwireless.com.au/"
+  },
+  {
+    "from": "April 2021",
+    "to": "April 2022",
+    "role": "Senior Full Stack Developer",
+    "company": "Sutherland Global Philippines",
+    "summary": "Developed and managed comprehensive web applications, ensuring seamless functionality and optimal performance. Proficient in creating REST APIs, designing databases, implementing version control, and utilizing automation tools for streamlined processes.",
+    "skills": [
+      "NodeJS",
+      "ExpressJS",
+      "MongoDB",
+      "Mongoose",
+      "VueJS",
+      "SASS",
+      "CSS",
+      "jQuery",
+      "docker",
+      "microservice",
+      "Sharepoint",
+      "Azure",
+      "mySQL",
+      "puppeteer"
+    ],
+    "link": "https://www.sutherlandglobal.com/"
+  },
+  {
+    "from": "January 2021",
+    "to": "February 2022",
+    "role": "Senior Front End Developer",
+    "company": "Indra Philippines",
+    "summary": "Managed Gcash App features, updated WordPress content, developed new components, translated designs to HTML, conducted unit tests for code quality, deployed event-specific themes, and performed performance testing for optimal user experience.",
+    "skills": [
+      "HTML",
+      "Git",
+      "NodeJS",
+      "VueJs",
+      "LESS",
+      "jQuery",
+      "Figma",
+      "Marmot",
+      "Jira",
+      "Wordpress",
+      "Vegeta"
+    ],
+    "link": "https://www.indracompany.com/"
+  },
+  {
+    "from": "May 2019",
+    "to": "June 2020",
+    "role": "Lead Javascript Developer",
+    "company": "Accenture",
+    "summary": "Prepared and presented new feature proposals, optimized legacy code, clarified uncertainties for the team and project manager, addressed bugs, guided junior team members, and built reusable code.",
+    "skills": [
+      "HTML",
+      "SASS",
+      "ExtJS",
+      "SAP",
+      "Jenkins",
+      "SOAP",
+      "Postman",
+      "NodeJS",
+      "CDS"
+    ],
+    "link": "https://www.accenture.com/ph-en"
+  },
+  {
+    "from": "October 2017",
+    "to": "April 2019",
+    "role": "Frontend Developer",
+    "company": "Spiral Works Technologies",
+    "summary": "Developed and optimized features in a legacy project, addressed bugs, clarified project goals, mentored junior team members, created reusable code, managed project repositories, reviewed code contributions, and deployed projects using Jenkins with a Vue.js web application.",
+    "skills": [
+      "HTML",
+      "Laravel 5.4",
+      "VueJs",
+      "SASS",
+      "CSS",
+      "PHP",
+      "jQuery",
+      "NGINX",
+      "Jenkins",
+      "YouTrack",
+      "Gulp"
+    ],
+    "link": ""
+  },
+  {
+    "from": "March 2017",
+    "to": "October 2017",
+    "role": "Full Stack Developer",
+    "company": "WYC Business Consultancy",
+    "summary": "Developed REST APIs with PHP and Laravel 5, created a mobile app using Cordova, mentored team members, modernized legacy code, implemented efficient database schema, and built essential project features with Vue.js for the front-end. Conducted research for process optimization.",
+    "skills": [
+      "HTML",
+      "Cordova",
+      "Laravel 5.4",
+      "VueJs",
+      "Mysql",
+      "SASS",
+      "CSS",
+      "PHP",
+      "Photoshop",
+      "jQuery"
+    ],
+    "link": "https://www.linkedin.com/company/spiralworks-technologies-inc/"
+  },
+  {
+    "from": "May 2016",
+    "to": "March 2017",
+    "role": "Full Stack Developer",
+    "company": "Caritas Health Shield Inc.",
+    "summary": "Developed PHP web applications and REST APIs using CodeIgniter, provided innovative solutions for efficient development, enhanced user experience with CSS/scripts, and designed optimized databases for efficient data storage and retrieval.",
+    "skills": [
+      "HTML",
+      "Javascript",
+      "PHP",
+      "Codeigniter",
+      "jQuery",
+      "CSS",
+      "Oracle SQL Developer",
+      "Photoshop",
+      "Tortoise SVN"
+    ],
+    "link": "https://www.caritashealthshield.com.ph/"
+  }
+]

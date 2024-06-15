@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body, 
+#root,
+.app {
+    height: 100%;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    @apply text-blue-200;
+}
+
+.anchor-link {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+#home p {
+    line-height: 1.8rem;
+}
+
+.experience-card, .project-card {
+    cursor: pointer;
+    opacity: 0.8;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.experience-card:hover, .project-card:hover {
+    opacity: 1;
+}
+
+.experience-card:hover .link-icon,
+.project-card:hover .link-icon 
+{
+    display: block;
+}
+
+
