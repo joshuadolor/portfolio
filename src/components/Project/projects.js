@@ -4,8 +4,32 @@ import imgByob from '../../assets/preview-byob.png'
 import imgGym from '../../assets/preview-gym.png'
 import imgReactDashboard from '../../assets/preview-react-dashboard.png'
 import imgMessaging from '../../assets/preview-messaging.png'
+import imgTopbuild from '../../assets/topbuild.png'
+import imgLiberty from '../../assets/libertyliveholdings.png'
+import imgLyft from '../../assets/lyft.png'
 
 export default [
+  {
+    title: 'TopBuild',
+    image: imgTopbuild,
+    summary: 'Investor relations website for TopBuild Corp — corporate info, financials, SEC filings, and stock data.',
+    skills: ['Insite', 'jQuery', 'SASS', 'Bootstrap', 'PHP'],
+    link: 'https://topbuild.com/'
+  },
+  {
+    title: 'Liberty Live Holdings',
+    image: imgLiberty,
+    summary: 'Investor relations site for Liberty Live Holdings, Inc. (LLYVA) — company overview, news, SEC filings, and financial information.',
+    skills: ['Insite', 'jQuery', 'SASS', 'Bootstrap', 'PHP'],
+    link: 'https://www.libertyliveholdings.com/'
+  },
+  {
+    title: 'Lyft Investor Relations',
+    image: imgLyft,
+    summary: 'Investor relations platform for Lyft, Inc. — financial results, presentations, SEC filings, and stock data.',
+    skills: ['Insite', 'jQuery', 'SASS', 'Bootstrap', 'PHP'],
+    link: 'https://investor.lyft.com/'
+  },
   {
     "title": "Gym Website",
     "image": imgGym,

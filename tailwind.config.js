@@ -6,16 +6,26 @@ export default {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: "#3b82f6",
+        secondary: "#fbbf24",
+        dark: "#050a14",
+        surface: "#0f172a",
+        "surface-light": "#1e293b",
+      },
       fontFamily: {
-        montserrat: ["Montserrat", "sans-serif"],
+        sans: ["Space Grotesk", "sans-serif"],
+      },
+      borderRadius: {
+        custom: "8px",
       },
     },
     screens: {
       xs: "480px",
       sm: "768px",
       md: "1060px",
-      lg: '1440px',
+      lg: "1440px",
     },
   },
   plugins: [],
-}
+};

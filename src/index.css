@@ -1,46 +1,56 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@300;400;500;600;700&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 html,
-body, 
-#root,
-.app {
-    height: 100%;
-    width: 100%;
-    font-family: 'Montserrat', sans-serif;
-    @apply text-blue-200;
+body,
+#root {
+  height: 100%;
+  width: 100%;
 }
 
-.anchor-link {
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
+body {
+  background-color: #050a14;
+  color: #f3f4f6;
+  font-family: "Space Grotesk", sans-serif;
 }
 
-#home p {
-    line-height: 1.8rem;
+/* Template custom utilities */
+.glass-card {
+  background: rgba(30, 30, 30, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
 }
 
-.experience-card, .project-card {
-    cursor: pointer;
-    opacity: 0.8;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
-}
-.experience-card:hover, .project-card:hover {
-    opacity: 1;
-}
-
-.experience-card:hover .link-icon,
-.project-card:hover .link-icon 
-{
-    display: block;
+.timeline-dot::before {
+  content: "";
+  position: absolute;
+  left: -9px;
+  top: 8px;
+  width: 18px;
+  height: 18px;
+  background: #0d7ff2;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(13, 127, 242, 0.5);
 }
 
+.timeline-dot-yellow::before {
+  content: "";
+  position: absolute;
+  left: -9px;
+  top: 8px;
+  width: 18px;
+  height: 18px;
+  background: #fbbf24;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(251, 191, 36, 0.5);
+}
 
+.rounded-custom {
+  border-radius: 8px;
+}
+
+.solid-text-primary {
+  color: #3b82f6;
+}

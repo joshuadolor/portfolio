@@ -18,6 +18,24 @@
     "link": "https://userway.org/"
   },
   {
+    "from": "November 2024",
+    "to": "Present",
+    "role": "Freelance Frontend Developer (Part-time)",
+    "company": "Equisolve",
+    "summary": "Developed and maintained investor relations websites using PHP, JavaScript, and SCSS within a proprietary CMS. Built reusable modular components to standardize UI patterns across multiple corporate investor platforms. Implemented dynamic financial content integrations (press releases, SEC filings, stock data feeds), customized layouts per corporate branding, and collaborated with backend engineers and project managers. Optimized page performance and cross-browser compatibility. Delivered 30+ client sites including TopBuild and Liberty Live Holdings.",
+    "skills": ["HTML", "CSS", "SASS", "Javascript", "Insite", "jQuery"],
+    "link": "https://www.equisolve.com/"
+  },
+  {
+    "from": "October 2023",
+    "to": "March 2024",
+    "role": "Senior Front End Developer",
+    "company": "HURIDOCS",
+    "summary": "Contributed to the frontend architecture of Uwazi, a large-scale open-source human rights documentation platform. Built reusable React components and dynamic interfaces for complex structured datasets, integrated RESTful APIs for entity-based legal and documentation records, and improved UI performance for large datasets. Collaborated in an Agile environment with international teams, maintained code quality through peer reviews and Git workflows, and refactored legacy components into modern, maintainable modules.",
+    "skills": ["HTML", "CSS", "SASS", "Javascript", "Typescript", "React", "Git", "Jest", "Cypress"],
+    "link": "https://huridocs.org/"
+  },
+  {
     "from": "July 2020",
     "to": "October 2023",
     "role": "Senior Full Stack Developer",
