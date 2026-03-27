@@ -7,6 +7,10 @@ import imgMessaging from '../../assets/preview-messaging.png'
 import imgTopbuild from '../../assets/topbuild.png'
 import imgLiberty from '../../assets/libertyliveholdings.png'
 import imgLyft from '../../assets/lyft.png'
+import imgQrestoo from '../../assets/qrestoo.png'
+import imgMamaFina from '../../assets/mamafinas.png'
+import imgTravelLeisure from '../../assets/travelandleisure.png'
+
 
 export default [
   {
@@ -15,6 +19,29 @@ export default [
     summary: 'Investor relations website for TopBuild Corp — corporate info, financials, SEC filings, and stock data.',
     skills: ['Insite', 'jQuery', 'SASS', 'Bootstrap', 'PHP'],
     link: 'https://topbuild.com/'
+  },
+  {
+    title: 'QRestoo',
+    summary:
+      'Business catalog, QR codes, and online bookings — help small businesses get online fast with a public page, hours, and booking without heavy setup.',
+    skills: ['Laravel', 'Docker', 'VueJS', 'Tailwind', 'MySQL', 'Twilio'],
+    link: 'https://qrestoo.com',
+    image: imgQrestoo,
+  },
+  {
+    title: "Mama Fina's",
+    summary:
+      'Restaurant site for Mama Fina’s in Hackensack, NJ — Filipino kitchen story, menu, online ordering, reservations, and press highlights.',
+    skills: ['Laravel', 'Docker', 'NextJS', 'Tailwind', 'MySQL', 'Twilio'],
+    link: 'https://mamafinas.com',
+    image: imgMamaFina,
+  },
+  {
+    title: 'Travel + Leisure Investor Relations',
+    summary: 'Investor relations platform for Travel + Leisure, Inc. — financial results, presentations, SEC filings, and stock data.',
+    skills: ['Insite', 'jQuery', 'SASS', 'Bootstrap', 'PHP'],
+    link: 'https://investor.travelandleisureco.com/',
+    image: imgTravelLeisure,
   },
   {
     title: 'Liberty Live Holdings',
