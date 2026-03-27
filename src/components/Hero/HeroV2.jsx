@@ -6,6 +6,7 @@ export default function HeroV2({
   headlineHighlight = "Joshua Dolor",
   subhead = "Senior Web Engineer",
   tagline,
+  businessNote,
   ctaLabel = "Download CV",
   ctaHref = "./JoshuaDolor.pdf",
   statsCard = null, // { number, label, tags[] }
@@ -59,10 +60,22 @@ export default function HeroV2({
               {tagline}
             </motion.p>
           )}
+          {businessNote && (
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: 0.28 }}
+              className="max-w-xl pt-6 mt-1 border-t border-white/[0.07]"
+            >
+              <p className="text-[0.9375rem] text-gray-500 leading-[1.65]">
+                {businessNote}
+              </p>
+            </motion.div>
+          )}
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: 0.3 }}
+            transition={{ duration: 0.4, delay: businessNote ? 0.34 : 0.3 }}
             className="flex flex-wrap gap-4 pt-4"
           >
             <a
@@ -92,7 +105,7 @@ export default function HeroV2({
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.35 }}
+            transition={{ duration: 0.5, delay: businessNote ? 0.38 : 0.35 }}
             className="relative hidden md:block"
           >
             <div className="absolute -inset-4 bg-primary/10 blur-3xl rounded-full" />

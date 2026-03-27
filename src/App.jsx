@@ -3,15 +3,15 @@ import NavBarV2 from "./components/NavBar/NavBarV2";
 import HeroV2 from "./components/Hero/HeroV2";
 import SectionHeading from "./components/SectionHeading";
 import TimelineItem from "./components/TimelineItem";
-import SkillCard from "./components/SkillCard";
+import SkillsSection from "./components/Skills/SkillsSection";
 import ProjectCardV2 from "./components/ProjectCardV2";
 import ContactCard from "./components/ContactCard";
 import SocialLinks from "./components/SocialLinks";
 import Footer from "./components/Footer";
 import { navItems } from "./data/navItems";
 import { careerJourney } from "./data/careerJourney";
-import { skills } from "./data/skills";
 import { contactMethods, socialLinks } from "./data/contact";
+import { dlrHeroNote, dlrFooterLine } from "./data/site";
 import projects from "./components/Project/projects";
 
 const heroStatsCard = {
@@ -26,7 +26,7 @@ export default function App() {
       <NavBarV2
         links={navItems}
         ctaHref="mailto:dev.joshuadolor@gmail.com"
-        ctaLabel="Hire Me"
+        ctaLabel="Get in touch"
       />
       <main>
         {/* Hero */}
@@ -36,6 +36,7 @@ export default function App() {
           headlineHighlight="Joshua Dolor"
           subhead="Senior Web Engineer"
           tagline="With 10+ years of industry experience, I specialize in crafting high-performance full-stack applications using modern ecosystems like Laravel, React, and Vue."
+          businessNote={dlrHeroNote}
           ctaLabel="Download CV"
           ctaHref="./JoshuaDolor.pdf"
           statsCard={heroStatsCard}
@@ -68,31 +69,7 @@ export default function App() {
           </div>
         </section>
 
-        {/* Skills */}
-        <section className="py-24 px-6" id="skills">
-          <div className="max-w-6xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 16 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="text-center mb-16"
-            >
-              <SectionHeading
-                title="The Tech Stack"
-                subtitle="Tools and frameworks I use to bring ideas to life"
-              />
-            </motion.div>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              {skills.map((skill, idx) => (
-                <SkillCard
-                  key={skill.label}
-                  {...skill}
-                  transition={{ duration: 0.35, delay: idx * 0.05 }}
-                />
-              ))}
-            </div>
-          </div>
-        </section>
+        <SkillsSection />
 
         {/* Projects */}
         <section className="py-24 px-6 bg-surface/50" id="projects">
@@ -159,7 +136,10 @@ export default function App() {
         </section>
       </main>
 
-      <Footer copyright={`© ${new Date().getFullYear()} Joshua Dolor`} />
+      <Footer
+        copyright={`© ${new Date().getFullYear()} Joshua Dolor`}
+        businessLine={dlrFooterLine}
+      />
     </div>
   );
 }
