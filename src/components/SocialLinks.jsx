@@ -30,13 +30,17 @@ export default function SocialLinks({ links = [] }) {
           typeof item.iconComponent === "function"
             ? item.iconComponent
             : iconByLabel[item.label];
+        const rel =
+          item.label === "GitHub" || item.label === "LinkedIn"
+            ? "noopener noreferrer me"
+            : "noopener noreferrer";
         return (
           <a
             key={item.label}
             className="text-gray-400 hover:text-white transition-colors"
             href={item.href}
             target="_blank"
-            rel="noopener noreferrer"
+            rel={rel}
             aria-label={item.label}
           >
             {Icon ? <Icon /> : item.svg ?? null}

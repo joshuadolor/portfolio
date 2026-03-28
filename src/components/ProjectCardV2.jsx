@@ -36,14 +36,14 @@ export default function ProjectCardV2({
       <div className="h-48 bg-surface-light relative">
         {image && (
           <img
-            alt=""
+            alt={`${title} — project preview`}
             className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity"
             src={image}
           />
         )}
       </div>
       <div className="p-6">
-        <h5 className="text-xl font-bold mb-2">{title}</h5>
+        <h3 className="text-xl font-bold mb-2">{title}</h3>
         <p className="text-gray-400 text-sm mb-4">{summary}</p>
         {tags.length > 0 && (
           <div className="flex gap-2 mb-4 flex-wrap">

@@ -23,11 +23,13 @@ const heroStatsCard = {
 export default function App() {
   return (
     <div className="min-h-screen">
-      <NavBarV2
-        links={navItems}
-        ctaHref="mailto:dev.joshuadolor@gmail.com"
-        ctaLabel="Get in touch"
-      />
+      <header>
+        <NavBarV2
+          links={navItems}
+          ctaHref="mailto:dev.joshuadolor@gmail.com"
+          ctaLabel="Get in touch"
+        />
+      </header>
       <main>
         {/* Hero */}
         <HeroV2
@@ -112,10 +114,10 @@ export default function App() {
             viewport={{ once: true }}
             className="max-w-4xl mx-auto text-center"
           >
-            <h3 className="text-4xl font-bold mb-8">
+            <h2 className="text-4xl font-bold mb-8">
               Let's build something{" "}
               <span className="text-secondary">remarkable</span> together.
-            </h3>
+            </h2>
             <p className="text-gray-400 mb-12 text-lg">
               I'm always open to discussing new projects, creative ideas or
               opportunities to be part of your visions.

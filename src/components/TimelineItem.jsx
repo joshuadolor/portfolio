@@ -31,7 +31,7 @@ export default function TimelineItem({
       >
         {period}
       </span>
-      <h4 className="text-3xl font-bold mb-1">{title}</h4>
+      <h3 className="text-3xl font-bold mb-1">{title}</h3>
       <p
         className={`text-xl font-medium mb-4 ${
           variant === "education" || variant === "yellow"
