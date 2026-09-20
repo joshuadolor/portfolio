@@ -17,7 +17,7 @@ import projects from "./components/Project/projects";
 const heroStatsCard = {
   number: "10+",
   label: "Years of Code Crafting",
-  tags: ["Full Stack", "Architecture"],
+  tags: ["Full Stack", "Architecture", "AI-Augmented"],
 };
 
 export default function App() {
@@ -36,8 +36,9 @@ export default function App() {
           eyebrow="Available for new opportunities"
           headline="Hi, I'm Joshua Dolor"
           headlineHighlight="Joshua Dolor"
-          subhead="Senior Web Engineer"
-          tagline="With 10+ years of industry experience, I specialize in crafting high-performance full-stack applications using modern ecosystems like Laravel, React, and Vue."
+          subhead="Senior Web Engineer · AI-Augmented"
+          subheadHighlight="AI-Augmented"
+          tagline="A capable full-stack engineer who puts AI to work—Cursor, Claude, and Claude Code—to ship high-performance apps with Laravel, React, and Vue without giving up ownership of architecture or quality."
           businessNote={dlrHeroNote}
           ctaLabel="Download CV"
           ctaHref="./JoshuaDolor.pdf"

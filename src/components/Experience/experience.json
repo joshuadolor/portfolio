@@ -4,7 +4,7 @@
     "to": "Present",
     "role": "Frontend Developer",
     "company": "Userway",
-    "summary": "Conduct WCAG compliance audits, implement accessibility solutions, and stay updated on standards. Communicate effectively, manage multiple projects, and consistently deliver high-quality results in a fast-paced environment.",
+    "summary": "Conduct WCAG compliance audits, implement accessibility solutions, and stay current with accessibility standards. Leverage Cursor, Claude, and Claude Code to accelerate development while retaining full ownership of architecture, code quality, and delivery. Communicate effectively, manage multiple projects, and consistently deliver high-quality results in a fast-paced environment.",
     "skills": [
       "HTML",
       "CSS",
@@ -13,7 +13,10 @@
       "Typescript",
       "React",
       "Angular",
-      "Git"
+      "Git",
+      "Cursor",
+      "Claude",
+      "Claude Code"
     ],
     "link": "https://userway.org/"
   },
@@ -22,8 +25,8 @@
     "to": "Present",
     "role": "Freelance Frontend Developer (Part-time)",
     "company": "Equisolve",
-    "summary": "Developed and maintained investor relations websites using PHP, JavaScript, and SCSS within a proprietary CMS. Built reusable modular components to standardize UI patterns across multiple corporate investor platforms. Implemented dynamic financial content integrations (press releases, SEC filings, stock data feeds), customized layouts per corporate branding, and collaborated with backend engineers and project managers. Optimized page performance and cross-browser compatibility. Delivered 30+ client sites including TopBuild and Liberty Live Holdings.",
-    "skills": ["HTML", "CSS", "SASS", "Javascript", "Insite", "jQuery"],
+    "summary": "Develop and maintain investor relations websites using PHP, JavaScript, and SCSS within a proprietary CMS, using Cursor, Claude, and Claude Code to move faster while holding the line on code quality. Build reusable modular components to standardize UI patterns across corporate investor platforms. Implement dynamic financial content integrations (press releases, SEC filings, stock data feeds), customize layouts per corporate branding, and collaborate with backend engineers and project managers. Optimize page performance and cross-browser compatibility. Delivered 30+ client sites including TopBuild and Liberty Live Holdings.",
+    "skills": ["HTML", "CSS", "SASS", "Javascript", "Insite", "jQuery", "Cursor", "Claude", "Claude Code"],
     "link": "https://www.equisolve.com/"
   },
   {

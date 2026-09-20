@@ -19,9 +19,9 @@ export default function SkillsSection() {
             Tools by layer
           </h2>
           <p className="mt-4 text-gray-500 max-w-2xl text-base leading-relaxed">
-            Grouped how I actually think about work—UI, server and data, then how
-            it gets to production. Not an exhaustive list; just what shows up most
-            often in my day-to-day.
+            Grouped how I actually think about work—UI, server and data, AI
+            leverage, then how it gets to production. Not an exhaustive list; just
+            what shows up most often in my day-to-day.
           </p>
         </motion.div>
 
@@ -30,12 +30,12 @@ export default function SkillsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-40px" }}
           transition={{ duration: 0.45, delay: 0.06 }}
-          className="grid gap-12 md:grid-cols-3 md:gap-0 md:divide-x md:divide-white/[0.06]"
+          className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4 lg:gap-0 lg:divide-x lg:divide-white/[0.06]"
         >
           {skillCategories.map((cat, colIdx) => (
             <div
               key={cat.title}
-              className={colIdx > 0 ? "md:pl-10 lg:pl-12" : ""}
+              className={colIdx > 0 ? "lg:pl-8 xl:pl-10" : ""}
             >
               <h3 className="text-sm font-semibold text-gray-200 mb-1">
                 {cat.title}

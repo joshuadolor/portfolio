@@ -5,6 +5,7 @@ export default function HeroV2({
   headline = "Hi, I'm Joshua Dolor",
   headlineHighlight = "Joshua Dolor",
   subhead = "Senior Web Engineer",
+  subheadHighlight,
   tagline,
   businessNote,
   ctaLabel = "Download CV",
@@ -48,7 +49,17 @@ export default function HeroV2({
             transition={{ duration: 0.4, delay: 0.2 }}
             className="text-2xl md:text-3xl text-gray-400 font-light"
           >
-            {subhead}
+            {subheadHighlight && subhead.includes(subheadHighlight) ? (
+              <>
+                {subhead.split(subheadHighlight)[0]}
+                <span className="text-secondary font-medium">
+                  {subheadHighlight}
+                </span>
+                {subhead.split(subheadHighlight)[1]}
+              </>
+            ) : (
+              subhead
+            )}
           </motion.h2>
           {tagline && (
             <motion.p
@@ -59,6 +70,23 @@ export default function HeroV2({
             >
               {tagline}
             </motion.p>
+          )}
+          {statsCard?.tags?.length > 0 && (
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: 0.27 }}
+              className="flex gap-2 flex-wrap md:hidden"
+            >
+              {statsCard.tags.map((tag) => (
+                <span
+                  key={tag}
+                  className="px-3 py-1 bg-surface-light rounded-full text-xs text-secondary border border-secondary/20"
+                >
+                  {tag}
+                </span>
+              ))}
+            </motion.div>
           )}
           {businessNote && (
             <motion.div
