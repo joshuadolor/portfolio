@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 256" role="img">
+  <title>Period Core lockup</title>
+  <g transform="translate(16,16) scale(0.875)">
+    <path fill="#000000" fill-rule="evenodd" d="M128 24a104 104 0 1 0 0.01 0zM104 72h40v8H128v68c0 16-10 26-24 26-10 0-18-4-24-12l14-12c3 4 6 6 10 6 6 0 10-4 10-12V80H104z"/>
+  </g>
+  <text x="260" y="148" fill="#000000" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="48" font-weight="600">Joshua Dolor</text>
+</svg>

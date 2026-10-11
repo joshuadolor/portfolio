@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 256" role="img">
+  <title>JD Seal lockup</title>
+  <g transform="translate(16,16) scale(0.875)">
+    <path fill="#000000" fill-rule="evenodd" d="M128 24a104 104 0 1 0 0.01 0zM86 76h34v8H110v56c0 12-8 20-18 20-8 0-14-3-18-9l12-10c2 3 5 5 7 5 4 0 7-3 7-8V84H86zM128 76h20c24 0 40 15 40 36s-16 36-40 36H128zm20 20v32c11 0 20-7 20-16s-9-16-20-16zM196 172a11 11 0 1 0 0.01 0z"/>
+  </g>
+  <text x="260" y="148" fill="#000000" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" font-size="48" font-weight="600">Joshua Dolor</text>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 256" width="720" height="256" role="img" aria-labelledby="title">
+  <title id="title">Joshua Dolor Access Gate lockup (exploratory text)</title>
+  <g id="symbol" fill="#000000" fill-rule="evenodd" transform="translate(16,16) scale(0.875)">
+    <path d="M52 44h44v40H80v72a20 20 0 0 1-40 0v-24h28v24a8 8 0 0 0 16 0V84H52V44zm72 0h36v136h-36V44zm36 0h8a68 68 0 0 1 0 136h-8V44zM160 84v56a28 28 0 0 0 0-56z"/>
+  </g>
+  <text x="260" y="152" fill="#000000" font-family="Space Grotesk, Helvetica, Arial, sans-serif" font-size="56" font-weight="700">Joshua Dolor</text>
+</svg>

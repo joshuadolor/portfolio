@@ -1,0 +1,30 @@
+{
+  "brand": "Joshua Dolor",
+  "tagline": "Ships with AI",
+  "brief": "Personal brand mark for a senior web engineer who ships accessible products with AI craft. Must work as a WebGL core, favicon, and nav mark on a dark blue/amber site.",
+  "adjectives": ["precise", "modern", "crafted", "confident"],
+  "criteria": "Solid silhouette for 3D, reads at 16 px, one-colour, ownable J without a second glyph.",
+  "industry": "developer-tools",
+  "brand_color": "#3b82f6",
+  "greyscale": false,
+  "designer": "Joshua Dolor",
+  "round": 2,
+  "concepts": [
+    {
+      "name": "Period Core",
+      "symbol": "period-core.svg",
+      "lockup": "period-core-horizontal.svg",
+      "idea": "Solid disc with a geometric J cut as negative space — the core of the orbit.",
+      "rationale": [
+        "Circular silhouette drops straight into the WebGL center",
+        "Evenodd cut keeps the mark one path and favicon-safe",
+        "Blue/amber mono variants match the site system"
+      ]
+    }
+  ],
+  "recommendation": "Period Core — approved direction for the portfolio identity and WebGL core.",
+  "next_steps": [
+    "Ship in nav + favicon + WebGL",
+    "Optional trademark search before wider commercial use"
+  ]
+}

@@ -1,63 +1,45 @@
-import { motion } from "framer-motion";
 import { skillCategories } from "../../data/skillCategories";
 
 export default function SkillsSection() {
   return (
-    <section className="py-24 px-6" id="skills">
-      <div className="max-w-5xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 14 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-40px" }}
-          transition={{ duration: 0.45 }}
-          className="mb-14 md:mb-16"
+    <section
+      className="relative z-10 py-24 md:py-28 px-6 border-t border-white/5 overflow-hidden"
+      id="skills"
+      aria-labelledby="skills-heading"
+    >
+      <div
+        className="pointer-events-none absolute inset-y-0 left-0 w-full md:w-[70%] bg-gradient-to-r from-dark via-dark/90 to-transparent"
+        aria-hidden="true"
+      />
+      <div className="relative max-w-content mx-auto">
+        <h2
+          id="skills-heading"
+          className="font-display text-4xl md:text-5xl text-paper tracking-tight mb-12 md:mb-16"
         >
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-3">
-            Capabilities
-          </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-100 tracking-tight">
-            Tools by layer
-          </h2>
-          <p className="mt-4 text-gray-500 max-w-2xl text-base leading-relaxed">
-            Grouped how I actually think about work—UI, server and data, AI
-            leverage, then how it gets to production. Not an exhaustive list; just
-            what shows up most often in my day-to-day.
-          </p>
-        </motion.div>
+          Toolkit
+        </h2>
 
-        <motion.div
-          initial={{ opacity: 0, y: 12 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-40px" }}
-          transition={{ duration: 0.45, delay: 0.06 }}
-          className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4 lg:gap-0 lg:divide-x lg:divide-white/[0.06]"
-        >
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           {skillCategories.map((cat, colIdx) => (
-            <div
-              key={cat.title}
-              className={colIdx > 0 ? "lg:pl-8 xl:pl-10" : ""}
-            >
-              <h3 className="text-sm font-semibold text-gray-200 mb-1">
+            <section key={cat.title} aria-labelledby={`skill-cat-${colIdx}`}>
+              <h3
+                id={`skill-cat-${colIdx}`}
+                className={`text-sm font-semibold uppercase tracking-[0.14em] mb-4 ${
+                  colIdx === 0 ? "text-primary" : "text-mute"
+                }`}
+              >
                 {cat.title}
               </h3>
-              <p className="text-xs text-gray-600 mb-6 leading-relaxed">
-                {cat.description}
-              </p>
-              <ul className="space-y-3.5">
-                {cat.items.map(({ Icon, label }) => (
-                  <li key={label} className="flex items-center gap-3">
-                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-md border border-white/[0.08] bg-dark/40 text-[1.15rem] text-gray-400">
-                      <Icon className="h-[1.15rem] w-[1.15rem]" aria-hidden />
-                    </span>
-                    <span className="text-sm text-gray-300 font-medium">
-                      {label}
-                    </span>
+              <ul className="space-y-2 list-none p-0 m-0">
+                {cat.items.map(({ label }) => (
+                  <li key={label} className="text-lg text-paper/90">
+                    {label}
                   </li>
                 ))}
               </ul>
-            </div>
+            </section>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );

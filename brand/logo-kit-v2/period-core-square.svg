@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256"><title>Joshua Dolor — Period Core</title><g transform="translate(-4.36 -9.47) scale(1.034)">
+  <title id="t">Joshua Dolor — Period Core</title>
+  <!-- Disc r=104 at (128,128). J cut via evenodd. Optical: J nudged ~2 units up. -->
+  <path fill="#000000" fill-rule="evenodd" d="M128 24a104 104 0 1 0 0.01 0zM102 68h44v10H132v70c0 18-11 28-26 28-11 0-20-4.5-26-13l16-13c3.5 4.5 7 7 11 7 7 0 11-4.5 11-13V88h-16z"/>
+</g></svg>

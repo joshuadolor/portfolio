@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="t">
+  <title id="t">Period Core - solid disc with J cut as negative space</title>
+  <!-- Construction: 104-unit radius disc at (128,128). J cut via evenodd. Solid silhouette for WebGL core. -->
+  <path fill="#000000" fill-rule="evenodd" d="M128 24a104 104 0 1 0 0.01 0zM104 72h40v8H128v68c0 16-10 26-24 26-10 0-18-4-24-12l14-12c3 4 6 6 10 6 6 0 10-4 10-12V80H104z"/>
+</svg>

@@ -4,6 +4,7 @@ const EmailIcon = () => (
     fill="none"
     stroke="currentColor"
     viewBox="0 0 24 24"
+    aria-hidden="true"
   >
     <path
       strokeLinecap="round"
@@ -20,6 +21,7 @@ const PhoneIcon = () => (
     fill="none"
     stroke="currentColor"
     viewBox="0 0 24 24"
+    aria-hidden="true"
   >
     <path
       strokeLinecap="round"
@@ -45,24 +47,31 @@ export default function ContactCard({
   const IconComponent = typeof icon === "string" ? iconMap[icon] : null;
   const content = (
     <>
-      <div className="w-12 h-12 bg-primary/10 rounded-custom flex items-center justify-center text-primary shrink-0">
+      <div
+        className="w-12 h-12 bg-primary/15 rounded-custom flex items-center justify-center text-primary shrink-0"
+        aria-hidden="true"
+      >
         {children ?? (IconComponent ? <IconComponent /> : null)}
       </div>
-      <div className="text-left">
-        <div className="text-xs text-gray-500 uppercase tracking-widest font-bold">
+      <div className="text-left min-w-0">
+        <div className="text-xs text-gray-400 uppercase tracking-widest font-bold">
           {label}
         </div>
-        <div className="text-lg font-bold">{value}</div>
+        <div className="text-lg font-bold text-gray-50 truncate">{value}</div>
       </div>
     </>
   );
 
   const className =
-    "glass-card p-8 flex items-center gap-4 text-gray-300 hover:border-primary/30 transition-colors";
+    "rounded-custom border border-white/15 bg-surface-light/50 p-8 flex items-center gap-4 text-gray-200 hover:border-primary/50 transition-colors min-h-[5.5rem]";
 
   if (href) {
     return (
-      <a href={href} className={`${className} no-underline`}>
+      <a
+        href={href}
+        className={`${className} no-underline`}
+        aria-label={`${label}: ${value}`}
+      >
         {content}
       </a>
     );

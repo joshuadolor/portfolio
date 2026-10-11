@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="title">
+  <title id="title">Joshua Dolor Signal JD</title>
+  <!-- Contained JD monogram in rounded tile. White letters via evenodd. -->
+  <g id="symbol" fill="#000000" fill-rule="evenodd">
+    <path d="M32 32h192a24 24 0 0 1 24 24v144a24 24 0 0 1-24 24H32a24 24 0 0 1-24-24V56a24 24 0 0 1 24-24zm44 48h48v28h-20v48a20 20 0 0 1-40 0v-20h28v20a8 8 0 0 0 16 0V108H76V80zm64 0h28v96h-28V80zm28 0h4a48 48 0 0 1 0 96h-4V80z"/>
+  </g>
+</svg>

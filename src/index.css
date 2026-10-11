@@ -2,55 +2,217 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primary: #3b82f6;
+  --secondary: #f5b942;
+  --dark: #0a0a0a;
+  --surface: #141414;
+  --paper: #f5f5f5;
+  --text: #f5f5f5;
+  --mute: #7a8499;
+  --stroke: #8b95a8;
+  --focus: #f5b942;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
 html,
 body,
 #root {
-  height: 100%;
+  min-height: 100%;
   width: 100%;
 }
 
 body {
-  background-color: #050a14;
-  color: #f3f4f6;
-  font-family: "Space Grotesk", sans-serif;
+  background-color: var(--dark);
+  color: var(--text);
+  font-family: "Source Sans 3", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
-/* Template custom utilities */
-.glass-card {
-  background: rgba(30, 30, 30, 0.6);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: 8px;
+::selection {
+  background: color-mix(in srgb, var(--primary) 40%, transparent);
+  color: white;
 }
 
-.timeline-dot::before {
-  content: "";
+.skip-link {
   position: absolute;
-  left: -9px;
-  top: 8px;
-  width: 18px;
-  height: 18px;
-  background: #0d7ff2;
-  border-radius: 50%;
-  box-shadow: 0 0 15px rgba(13, 127, 242, 0.5);
+  left: 1rem;
+  top: 0;
+  z-index: 1000;
+  padding: 0.75rem 1.25rem;
+  border-radius: 999px;
+  background: var(--secondary);
+  color: #111;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-decoration: none;
+  transform: translateY(-150%);
+  transition: transform 0.15s ease;
 }
 
-.timeline-dot-yellow::before {
-  content: "";
-  position: absolute;
-  left: -9px;
-  top: 8px;
-  width: 18px;
-  height: 18px;
-  background: #fbbf24;
-  border-radius: 50%;
-  box-shadow: 0 0 15px rgba(251, 191, 36, 0.5);
+.skip-link:focus,
+.skip-link:focus-visible {
+  transform: translateY(0.75rem);
+  outline: 3px solid var(--primary);
+  outline-offset: 3px;
 }
 
-.rounded-custom {
-  border-radius: 8px;
+:focus {
+  outline: none;
 }
 
-.solid-text-primary {
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
+
+.scene-canvas {
+  animation: scene-in 1.4s ease-out both;
+}
+
+@keyframes scene-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scene-canvas {
+    animation: none;
+  }
+}
+
+[data-hero],
+[data-reveal] {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  [data-hero],
+  [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* Display name — soft optical serif */
+.outline-name {
+  color: #f5f5f5;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  font-optical-sizing: auto;
+}
+
+.bg-primary {
+  background-color: #3b82f6;
+}
+.bg-secondary {
+  background-color: #f5b942;
+}
+.bg-dark {
+  background-color: #0a0a0a;
+}
+.bg-surface {
+  background-color: #141414;
+}
+.bg-paper {
+  background-color: #f5f5f5;
+}
+.text-primary {
   color: #3b82f6;
+}
+.text-secondary {
+  color: #f5b942;
+}
+.text-dark {
+  color: #0a0a0a;
+}
+.text-mute {
+  color: #7a8499;
+}
+.text-paper {
+  color: #f5f5f5;
+}
+.text-stroke {
+  color: #8b95a8;
+}
+.border-primary {
+  border-color: #3b82f6;
+}
+.border-secondary {
+  border-color: #f5b942;
+}
+.rounded-custom {
+  border-radius: 999px;
+}
+
+.font-display {
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  font-optical-sizing: auto;
+}
+.font-body {
+  font-family: "Source Sans 3", system-ui, sans-serif;
+}
+
+/* Pill quote — quiet chip */
+.quote-pill {
+  display: inline-flex;
+  align-items: center;
+  max-width: 28rem;
+  padding: 0.85rem 1.25rem;
+  border-radius: 999px;
+  background: #1a1a1a;
+  color: #f5f5f5;
+  font-size: 0.95rem;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 0;
+  line-height: 1.45;
+  font-family: "Fraunces", Georgia, serif;
+}
+
+
+.work-chapter,
+.work-stage {
+  min-height: 100svh;
+}
+
+.work-stage {
+  scroll-snap-align: start;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }

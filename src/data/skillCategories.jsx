@@ -17,6 +17,15 @@ import { HiSparkles } from "react-icons/hi2";
 
 export const skillCategories = [
   {
+    title: "AI workflow",
+    description: "Daily drivers. How delivery gets faster.",
+    items: [
+      { Icon: RiCursorLine, label: "Cursor" },
+      { Icon: HiSparkles, label: "Claude" },
+      { Icon: RiRobot2Line, label: "Claude Code" },
+    ],
+  },
+  {
     title: "Interface",
     description: "Component-driven UIs and styling systems.",
     items: [
@@ -35,15 +44,6 @@ export const skillCategories = [
       { Icon: SiNodedotjs, label: "Node.js" },
       { Icon: SiMysql, label: "MySQL" },
       { Icon: SiMongodb, label: "MongoDB" },
-    ],
-  },
-  {
-    title: "AI workflow",
-    description: "How I move faster without giving up craft.",
-    items: [
-      { Icon: RiCursorLine, label: "Cursor" },
-      { Icon: HiSparkles, label: "Claude" },
-      { Icon: RiRobot2Line, label: "Claude Code" },
     ],
   },
   {

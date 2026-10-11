@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="t">
+  <title id="t">Facet Node - soft hex node with period disc and J notch</title>
+  <!-- Flat-top hex, size 104. Vertices on 60 deg lattice. Optical lift via cy=122. -->
+  <path fill="#000000" fill-rule="evenodd" d="M180 32L232 122 180 212 76 212 24 122 76 32zM96 74h36v8H120v56c0 12-8 20-18 20-8 0-14-3-18-9l12-10c2 3 4 5 7 5 4 0 6-3 6-8V82H96zM148 114a26 26 0 1 0 0.01 0z"/>
+</svg>

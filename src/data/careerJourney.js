@@ -1,24 +1,20 @@
 import experienceData from "../components/Experience/experience.json";
 
 /**
- * Maps experience.json entries to { period, title, org, description, variant? }.
- * variant: undefined | "education" | "yellow" for timeline dot style.
+ * Maps experience.json → timeline entries (work only).
  */
-const fromExperience = experienceData.map((item) => ({
+export const careerJourney = experienceData.map((item) => ({
   period: `${item.from} — ${item.to}`,
   title: item.role,
   org: item.company,
   description: item.summary,
-  variant: undefined,
+  skills: item.skills || [],
 }));
 
-const educationItem = {
+/** Kept under Experience as a footnote — not mixed into the job rail */
+export const education = {
   period: "2016",
-  title: "Bachelor of Science in Information Technology with Spacialization in Web and Mobile Applications",
+  title:
+    "Bachelor of Science in Information Technology with Specialization in Web and Mobile Applications",
   org: "Far Eastern University - Institute of Technology",
-  description:
-    "",
-  variant: "education",
 };
-
-export const careerJourney = [...fromExperience, educationItem];
