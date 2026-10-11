@@ -1,0 +1,29 @@
+# Joshua Dolor
+
+> Senior web engineer who ships with AI. Principal, DLR Web Solutions LLC.
+
+- Site: https://joshuadolor.com/
+- Email: dev.joshuadolor@gmail.com
+- Phone: +34 673 452 825
+- GitHub: https://github.com/joshuadolor
+- LinkedIn: https://www.linkedin.com/in/joshuadolor/
+
+## Summary
+
+Joshua Dolor is a senior web engineer based in Spain (Comunidad Valenciana).
+He uses Cursor, Claude, and Claude Code daily while owning architecture, accessibility (WCAG), and delivery quality. Core stack: Laravel, React, Vue, JavaScript/TypeScript.
+
+## Notable credentials
+
+- AI Automation with Claude (Advancing Women in Tech)
+- Introduction to AI (Google)
+- Maximize Productivity With AI Tools (Google)
+- Verified International Academic Qualifications (World Education Services)
+
+## Education
+
+Bachelor of Science in Information Technology with Specialization in Web and Mobile Applications — Far Eastern University - Institute of Technology (2016)
+
+## Preferred citation
+
+Joshua Dolor, senior web engineer who ships with AI — https://joshuadolor.com/

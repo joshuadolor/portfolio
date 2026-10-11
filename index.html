@@ -34,16 +34,19 @@
       property="og:description"
       content="Senior web engineer who uses Cursor, Claude, and Claude Code every day — accessible Laravel, React, and Vue products. Principal, DLR Web Solutions LLC."
     />
-    <meta property="og:image" content="https://joshuadolor.com/icon.svg" />
-    <meta property="og:image:alt" content="Joshua Dolor — portfolio" />
+    <meta property="og:image" content="https://joshuadolor.com/og-image.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Joshua Dolor — senior web engineer who ships with AI" />
 
-    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Joshua Dolor | Ships with AI" />
     <meta
       name="twitter:description"
       content="Senior web engineer who uses Cursor, Claude, and Claude Code every day. Accessible products. Principal, DLR Web Solutions LLC."
     />
-    <meta name="twitter:image" content="https://joshuadolor.com/icon.svg" />
+    <meta name="twitter:image" content="https://joshuadolor.com/og-image.png" />
 
     <title>Joshua Dolor | Ships with AI</title>
     <script type="application/ld+json">
@@ -60,14 +63,105 @@
             "publisher": { "@id": "https://joshuadolor.com/#person" }
           },
           {
+            "@type": "ProfilePage",
+            "@id": "https://joshuadolor.com/#profilepage",
+            "url": "https://joshuadolor.com/",
+            "name": "Joshua Dolor | Ships with AI",
+            "isPartOf": { "@id": "https://joshuadolor.com/#website" },
+            "about": { "@id": "https://joshuadolor.com/#person" },
+            "mainEntity": { "@id": "https://joshuadolor.com/#person" },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://joshuadolor.com/#organization",
+            "name": "DLR Web Solutions LLC",
+            "url": "https://joshuadolor.com/",
+            "founder": { "@id": "https://joshuadolor.com/#person" },
+            "sameAs": [
+              "https://github.com/joshuadolor",
+              "https://www.linkedin.com/in/joshuadolor/"
+            ]
+          },
+          {
             "@type": "Person",
             "@id": "https://joshuadolor.com/#person",
             "name": "Joshua Dolor",
             "url": "https://joshuadolor.com/",
-            "jobTitle": "Senior Web Engineer who ships with AI",
+            "image": "https://joshuadolor.com/og-image.png",
+            "email": "mailto:dev.joshuadolor@gmail.com",
+            "telephone": "+34673452825",
+            "jobTitle": "Senior Web Engineer",
+            "description": "Senior web engineer who ships with AI. Daily Cursor, Claude, and Claude Code. Accessible Laravel, React, and Vue products.",
+            "worksFor": { "@id": "https://joshuadolor.com/#organization" },
+            "alumniOf": {
+              "@type": "CollegeOrUniversity",
+              "name": "Far Eastern University - Institute of Technology"
+            },
+            "knowsAbout": [
+              "Web development",
+              "Accessibility",
+              "WCAG",
+              "React",
+              "Vue.js",
+              "Laravel",
+              "JavaScript",
+              "TypeScript",
+              "Cursor",
+              "Claude",
+              "Claude Code",
+              "AI-assisted development"
+            ],
+            "address": {
+              "@type": "PostalAddress",
+              "addressRegion": "Comunidad Valenciana",
+              "addressCountry": "ES"
+            },
             "sameAs": [
               "https://github.com/joshuadolor",
               "https://www.linkedin.com/in/joshuadolor/"
+            ],
+            "hasCredential": [
+              {
+                "@type": "EducationalOccupationalCredential",
+                "name": "AI Automation with Claude",
+                "credentialCategory": "certificate",
+                "recognizedBy": {
+                  "@type": "Organization",
+                  "name": "Advancing Women in Tech"
+                },
+                "url": "https://www.coursera.org/account/accomplishments/verify/3UIJMPD8C44F"
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "name": "Introduction to AI",
+                "credentialCategory": "certificate",
+                "recognizedBy": {
+                  "@type": "Organization",
+                  "name": "Google"
+                },
+                "url": "https://www.coursera.org/account/accomplishments/verify/DPANJXWBEM7D"
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "name": "Maximize Productivity With AI Tools",
+                "credentialCategory": "certificate",
+                "recognizedBy": {
+                  "@type": "Organization",
+                  "name": "Google"
+                },
+                "url": "https://www.coursera.org/account/accomplishments/verify/M23VY3568B7P"
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "name": "Verified International Academic Qualifications",
+                "credentialCategory": "certificate",
+                "recognizedBy": {
+                  "@type": "Organization",
+                  "name": "World Education Services"
+                },
+                "url": "https://www.credly.com/badges/1af8b53a-3eed-4f14-a19a-6e02f1419b3d"
+              }
             ]
           }
         ]
@@ -82,6 +176,35 @@
   </head>
   <body class="antialiased overflow-x-hidden">
     <div id="root"></div>
+    <!-- Crawlable summary for agents / non-JS clients. Hidden when the app mounts. -->
+    <noscript>
+      <main style="max-width: 42rem; margin: 2rem auto; padding: 0 1.25rem; font-family: system-ui, sans-serif; line-height: 1.5; color: #111;">
+        <h1>Joshua Dolor</h1>
+        <p>Senior web engineer · Ships with AI. Principal, DLR Web Solutions LLC.</p>
+        <p>
+          Daily tools: Cursor, Claude, and Claude Code. Ships accessible products with
+          Laravel, React, and Vue.
+        </p>
+        <p>
+          Email:
+          <a href="mailto:dev.joshuadolor@gmail.com">dev.joshuadolor@gmail.com</a>
+          · Phone: <a href="tel:+34673452825">+34 673 452 825</a>
+        </p>
+        <p>
+          <a href="https://github.com/joshuadolor">GitHub</a>
+          ·
+          <a href="https://www.linkedin.com/in/joshuadolor/">LinkedIn</a>
+          ·
+          <a href="https://joshuadolor.com/">joshuadolor.com</a>
+        </p>
+        <h2>Focus</h2>
+        <ul>
+          <li>Accessible frontends (WCAG)</li>
+          <li>AI-assisted delivery without giving up craft</li>
+          <li>Laravel, React, Vue product engineering</li>
+        </ul>
+      </main>
+    </noscript>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
