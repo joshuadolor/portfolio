@@ -1,0 +1,13 @@
+node_modules
+dist
+dist-ssr
+.git
+.github
+.vscode
+.DS_Store
+*.log
+*.local
+.env
+.env.*
+README.md
+deploy
