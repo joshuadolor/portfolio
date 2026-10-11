@@ -7,6 +7,7 @@ export const careerJourney = experienceData.map((item) => ({
   period: `${item.from} — ${item.to}`,
   title: item.role,
   org: item.company,
+  orgHref: item.link || undefined,
   description: item.summary,
   skills: item.skills || [],
 }));

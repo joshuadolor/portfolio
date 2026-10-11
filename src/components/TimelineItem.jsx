@@ -2,6 +2,7 @@ export default function TimelineItem({
   period,
   title,
   org,
+  orgHref,
   description,
   skills = [],
 }) {
@@ -16,7 +17,19 @@ export default function TimelineItem({
       </h3>
       <p className="mt-1 text-sm text-primary">
         <span className="sr-only">Company: </span>
-        {org}
+        {orgHref ? (
+          <a
+            href={orgHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary hover:text-secondary transition-colors cursor-pointer no-underline"
+          >
+            {org}
+            <span className="sr-only"> (opens in a new tab)</span>
+          </a>
+        ) : (
+          org
+        )}
       </p>
       {description ? (
         <p className="mt-3 text-mute text-sm md:text-base leading-relaxed max-w-[46ch]">

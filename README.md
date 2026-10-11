@@ -19,6 +19,6 @@ GitHub Actions:
 - **CI** (`.github/workflows/ci.yml`) — lint + build on push/PR to `master`
 - **Deploy** (`.github/workflows/deploy.yml`) — build/push Docker image to GHCR, then SSH deploy to the Ubuntu server
 
-Docker serves the static build with nginx inside the container; host nginx terminates TLS and proxies to `127.0.0.1:8080`.
+Docker serves the static build with nginx inside the container; host nginx terminates TLS and proxies to the loopback port set by `PORTFOLIO_PORT` (default `8080`) in `/opt/portfolio/.env`.
 
-**What you need to configure:** see [deploy/README.md](deploy/README.md) for server setup, GHCR login, DNS, Certbot, and GitHub Actions secrets (`SSH_HOST`, `SSH_USER`, `SSH_PRIVATE_KEY`, optional `SSH_PORT`).
+**What you need to configure:** see [deploy/README.md](deploy/README.md) for server setup, port choice, GHCR login, DNS, Certbot, and GitHub Actions secrets (`SSH_HOST`, `SSH_USER`, `SSH_PRIVATE_KEY`, optional `SSH_PORT`).

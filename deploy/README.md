@@ -24,6 +24,19 @@ sudo chown deploy:deploy /opt/portfolio
 
 Copy `docker-compose.yml` from this repo into `/opt/portfolio/docker-compose.yml` (or clone the repo there and keep it in sync).
 
+### Choose a host port
+
+The app binds to loopback only. Set a free port so it does not clash with other Docker projects:
+
+```bash
+# /opt/portfolio/.env
+PORTFOLIO_PORT=8080
+```
+
+Copy from [`deploy/.env.example`](./.env.example). Then point host nginx `proxy_pass` at the same port (see [`host-nginx.conf.example`](./host-nginx.conf.example)).
+
+Examples: `8080`, `8081`, `9080` — whatever is free on that server (`ss -tlnp | grep 808` to check).
+
 ### GHCR login on the server
 
 Create a GitHub Personal Access Token (classic) with `read:packages`, then:
@@ -77,4 +90,7 @@ Repo → **Settings → Secrets and variables → Actions** → add:
 docker build -t portfolio:local .
 docker run --rm -p 8080:80 portfolio:local
 # open http://localhost:8080
+
+# Or via compose with a custom port:
+# PORTFOLIO_PORT=9080 docker compose up
 ```

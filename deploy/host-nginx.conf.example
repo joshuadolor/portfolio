@@ -5,6 +5,8 @@
 #   sudo nginx -t && sudo systemctl reload nginx
 # Issue TLS after DNS points here:
 #   sudo certbot --nginx -d joshuadolor.com -d www.joshuadolor.com
+#
+# proxy_pass port must match PORTFOLIO_PORT in /opt/portfolio/.env (default 8080).
 
 server {
     listen 80;

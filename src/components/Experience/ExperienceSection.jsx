@@ -2,13 +2,14 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { careerJourney, education } from "../../data/careerJourney";
+import { certifications } from "../../data/certifications";
 import TimelineItem from "../TimelineItem";
 
 gsap.registerPlugin(ScrollTrigger);
 
 /**
  * Experience stays readable with persistent WebGL.
- * Jobs on the rail; education as a quiet note underneath.
+ * Jobs on the rail; education and certifications as quiet notes underneath.
  */
 export default function ExperienceSection() {
   const scopeRef = useRef(null);
@@ -155,6 +156,81 @@ export default function ExperienceSection() {
               {education.org}
               <span className="text-mute/70"> · {education.period}</span>
             </p>
+          </aside>
+
+          {/* Certifications — same quiet footnote as Education */}
+          <aside
+            data-timeline-item
+            className="mt-12 pt-10 border-t border-white/10 pl-8 md:pl-10"
+            aria-labelledby="certifications-heading"
+          >
+            <p
+              id="certifications-heading"
+              className="text-xs font-semibold uppercase tracking-[0.18em] text-secondary mb-5"
+            >
+              Licenses &amp; certifications
+            </p>
+            <ul className="space-y-6 list-none p-0 m-0">
+              {certifications.map((cert) => (
+                <li
+                  key={`${cert.title}-${cert.issuer}`}
+                  className="flex gap-3 sm:gap-4 items-start"
+                >
+                  {cert.logo ? (
+                    <a
+                      href={cert.issuerHref || cert.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-0.5 shrink-0 flex h-10 w-10 items-center justify-center rounded-md bg-white/95 p-1.5"
+                      aria-label={`${cert.issuer} website (opens in a new tab)`}
+                    >
+                      <img
+                        src={cert.logo}
+                        alt=""
+                        className="max-h-full max-w-full object-contain"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </a>
+                  ) : null}
+                  <div className="min-w-0">
+                    <p className="text-base md:text-lg text-paper tracking-tight">
+                      {cert.title}
+                    </p>
+                    <p className="mt-1 text-sm text-mute">
+                      {cert.issuerHref ? (
+                        <a
+                          href={cert.issuerHref}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-mute hover:text-paper transition-colors cursor-pointer no-underline"
+                        >
+                          {cert.issuer}
+                          <span className="sr-only"> (opens in a new tab)</span>
+                        </a>
+                      ) : (
+                        cert.issuer
+                      )}
+                      <span className="text-mute/70"> · {cert.issued}</span>
+                    </p>
+                    {cert.href ? (
+                      <a
+                        href={cert.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-1.5 inline-block text-sm text-primary hover:text-secondary transition-colors cursor-pointer"
+                      >
+                        Credential
+                        <span className="sr-only">
+                          {" "}
+                          for {cert.title} (opens in a new tab)
+                        </span>
+                      </a>
+                    ) : null}
+                  </div>
+                </li>
+              ))}
+            </ul>
           </aside>
         </div>
       </div>
